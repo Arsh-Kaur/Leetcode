@@ -26,7 +26,7 @@ class Solution {
     public void recursionSubset(int[] nums, int idx, List<Integer> running, List<List<Integer>> result){
         //base case
         if(idx == nums.length){
-            result.add( new ArrayList(running));
+            result.add( new ArrayList<>(running));
             return;
         } 
 
