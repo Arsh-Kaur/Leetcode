@@ -31,8 +31,8 @@ class Solution {
         } 
 
         // state => index, running list with and without value at idx.
-        // 1. change index, dont change running
-        // 2. change index, change running list
+        // 1. not add current element
+        // 2. add current element
         recursionSubset(nums, idx+1, running, result);
         running.add(nums[idx]);
         recursionSubset(nums, idx+1, running, result);
